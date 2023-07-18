@@ -10,6 +10,7 @@ public class ClassicalMusic implements Music{
         return "Hungarian Rhapsody";
     }
 
+    // destroy метод не вызывается при наличии scope "prototype"
     public void doMyDestroy() {
         System.out.println("Doing my destruction");
     }
