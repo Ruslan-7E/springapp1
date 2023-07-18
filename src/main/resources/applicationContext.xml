@@ -16,9 +16,12 @@
           destroy-method="doMyDestroy">
     </bean>
 
-    <!--    <bean id="musicBean2"-->
-    <!--          class="ru.mukhametshin.springcourse.RockMusic">-->
-    <!--    </bean>-->
+    <bean id="musicBean2"
+          class="ru.mukhametshin.springcourse.RockMusic"
+          scope="prototype"
+          init-method="doMyInit1"
+          destroy-method="doMyDestroy1">
+    </bean>
 
     <!--    <bean id="musicBean3"-->
     <!--          class="ru.mukhametshin.springcourse.TranceMusic">-->

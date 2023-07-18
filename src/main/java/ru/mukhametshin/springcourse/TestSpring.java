@@ -12,6 +12,11 @@ public class TestSpring {
 
         System.out.println(classicalMusic.getSong());
 
+        // add new bean instance
+        RockMusic rockMusic = context.getBean("musicBean2", RockMusic.class);
+
+        System.out.println(rockMusic.getSong());
+
 //        MusicPlayer firstMusicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
 //        MusicPlayer secondMusicPlayer = context.getBean("musicPlayer", MusicPlayer.class);
 //
